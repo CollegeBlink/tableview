@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+<UITableViewDelegate, UITableViewDataSource>
+{
+    NSArray *StudentComputer;
+    NSArray *StudentName;
+}
+
+@property(nonatomic,retain) IBOutlet UITableView *myTableView;
 
 @end
